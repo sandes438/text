@@ -12,3 +12,21 @@ EXPOSE 80
 
 # Start NGINX server when the container is launched
 CMD ["nginx", "-g", "daemon off;"]
+
+
+sudo docker build -t test .
+Sending build context to Docker daemon  2.048kB
+Step 1/5 : FROM nginx:latest
+latest: Pulling from library/nginx
+26c5c85e47da: Pull complete 
+4f3256bdf66b: Pull complete 
+2019c71d5655: Pull complete 
+8c767bdbc9ae: Pull complete 
+78e14bb05fd3: Pull complete 
+75576236abf5: Pull complete 
+Digest: sha256:b1d73114312c09bdfea340c6debddd3230951d3b2a4cf8a8deb2e9326f135314
+Status: Downloaded newer image for nginx:latest
+ ---> 6efc10a0510f
+Step 2/5 : COPY nginx.conf /etc/nginx/nginx.conf
+
+
